@@ -1,5 +1,6 @@
 from django.urls import path
 from main.views import show_main, create_news, show_news, show_xml, show_json, show_xml_by_id, show_json_by_id
+app_name = 'main'
 urlpatterns = [
     path('', show_main, name='show_main'),
     path('create-news/', create_news, name='create_news'),
